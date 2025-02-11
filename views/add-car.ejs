@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Car</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="location.href='/'">Home</button>
+      <button onclick="location.href='/add-car'">Add Car</button>
+      <button onclick="location.href='/login'">Login</button>
+      <button onclick="location.href='/register'">Register</button>
+    </nav>
+  </header>
+  <h1>Add New Car</h1>
+  <form action="/api/cars" method="POST">
+    <input type="text" name="model" placeholder="Model" required>
+    <input type="text" name="location" placeholder="Location" required>
+    <input type="number" name="price" placeholder="Price" required>
+    <input type="number" name="release_date" placeholder="Release Date" required>
+    <input type="text" name="mileage" placeholder="Mileage" required>
+    <input type="text" name="user_id" placeholder="User ID" required>
+    <button type="submit">Add Car</button>
+  </form>
+</body>
+</html>

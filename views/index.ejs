@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Listings</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="location.href='/'">Home</button>
+      <button onclick="location.href='/add-car'">Add Car</button>
+      <button onclick="location.href='/login'">Login</button>
+      <button onclick="location.href='/register'">Register</button>
+    </nav>
+  </header>
+  <h1>Car Listings</h1>
+  <ul>
+    <% if (cars.length === 0) { %>
+      <li>No cars available.</li>
+    <% } else { %>
+      <% cars.forEach(function(car) { %>
+        <li><%= car.model %> - <%= car.price %> - <%= car.location %></li>
+      <% }); %>
+    <% } %>
+  </ul>
+</body>
+</html>

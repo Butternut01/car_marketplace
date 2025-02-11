@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="location.href='/'">Home</button>
+      <button onclick="location.href='/add-car'">Add Car</button>
+      <button onclick="location.href='/login'">Login</button>
+      <button onclick="location.href='/register'">Register</button>
+    </nav>
+  </header>
+  <h1>Register</h1>
+  <form action="/api/users/register" method="POST">
+    <input type="text" name="user_name" placeholder="User Name" required>
+    <input type="text" name="location" placeholder="Location" required>
+    <input type="text" name="phone_number" placeholder="Phone Number" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
