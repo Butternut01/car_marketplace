@@ -47,7 +47,7 @@ Install the required npm packages by running:
 ## 4. Create a .env File
 In the root directory of the project, create a file named .env and add the following configuration:
 - env
-- MONGO_URI=mongodb+srv://bayadilov06:your_db_password@cluster22.7wjii.mongodb.net/car_marketplace?retryWrites=true&w=majority
+- MONGO_URI=mongodb+srv://<dbname>:your_db_password@<clustername>.7wjii.mongodb.net/car_marketplace?retryWrites=true&w=majority
 - PORT=5000
 - JWT_SECRET=your_jwt_secret
 
